@@ -10,3 +10,7 @@ This project is my portfolio of all the big projects I have done so far. It allo
 
 ## Link to GitHub Repo
 https://github.com/miraisekai/challenge-2
+
+## Link to deployed page
+https://miraisekai.github.io/challenge-2/
+
