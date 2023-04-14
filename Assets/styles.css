@@ -1,0 +1,109 @@
+/* CSS variables */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --bg-color: #f8f9fa;
+    --light-color: #ffffff;
+    --dark-color: #343a40;
+    --border-color: #ced4da;
+}
+
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: var(--bg-color);
+    color: var(--dark-color);
+}
+
+header {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    text-align: left;
+    padding: 1.5rem ;
+}
+
+.profile-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+}
+
+
+.intro {
+    padding: 2rem;
+    text-align: center;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.project {
+    background-color: var(--light-color);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 350px;
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+.project h2 {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    color: var(--dark-color);
+}
+
+.project p {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    color: var(--secondary-color);
+}
+
+.project a {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.project a:hover {
+    background-color: #0069d9;
+}
+
+@media screen and (max-width: 768px) {
+    .projects {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
